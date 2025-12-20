@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimbaSara | Problem Solver</title>
+    <link href="./dist/output.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-rajdhani selection:bg-cyber-primary selection:text-black">
+
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-black/80 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse group">
+                <!-- <i class="fa-solid fa-microchip text-3xl text-cyber-primary group-hover:animate-spin"></i> -->
+                <span
+                    class="self-center text-2xl font-orbitron font-bold whitespace-nowrap text-white group-hover:text-cyber-primary transition-colors">SIMBA<span
+                        class="text-cyber-secondary">SARA</span></span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" id="menu-btn"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-white/10 focus:outline-none ring-1 ring-cyber-primary">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-black/50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-white bg-cyber-primary rounded md:bg-transparent md:text-cyber-primary md:p-0 font-orbitron tracking-wider"
+                            aria-current="page">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#expertise"
+                            class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-cyber-secondary md:p-0 font-orbitron tracking-wider transition-all">EXPERTISE</a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-cyber-secondary md:p-0 font-orbitron tracking-wider transition-all">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-cyber-secondary md:p-0 font-orbitron tracking-wider transition-all">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- 3D Grid Background -->
+        <div class="grid-container">
+            <div class="grid-floor"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4">
+            <div
+                class="mb-4 inline-block px-4 py-1 border border-cyber-primary rounded-full bg-cyber-dim backdrop-blur-sm animate-float">
+                <span class="text-cyber-primary font-bold tracking-widest text-xs md:text-sm uppercase">System Online //
+                    v.2.0.25</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-orbitron font-black text-white mb-6 uppercase tracking-tighter">
+                Hello, I'm <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-primary to-cyber-secondary">Simba</span>
+            </h1>
+
+            <div class="text-xl md:text-3xl font-bold text-gray-300 mb-8 h-12 flex items-center justify-center gap-2">
+                <span>I Build</span>
+                <span id="typewriter" class="text-cyber-primary neon-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </div>
+
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-sm md:text-base leading-relaxed">
+                Merging the gap between hardware functionality and software innovation.
+                Specialized in full-cycle development from the server rack to the mobile screen.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#projects"
+                    class="px-8 py-3 border border-cyber-primary text-cyber-primary font-orbitron font-bold hover:bg-cyber-primary hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(0,243,255,0.4)]">
+                    VIEW PROTOCOLS
+                </a>
+                <a href="#contact"
+                    class="px-8 py-3 border border-cyber-secondary text-cyber-secondary font-orbitron font-bold hover:bg-cyber-secondary hover:text-white transition-all duration-300">
+                    INITIATE COMMS
+                </a>
+            </div>
+        </div>
+
+        <!-- Gradient Fade at Bottom -->
+        <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-cyber-black to-transparent z-10"></div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-cyber-black relative">
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-cyber-primary/5 blur-[120px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="max-w-screen-xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-orbitron font-bold text-white mb-2"><span class="text-cyber-primary">///</span>
+                    CORE COMPETENCIES</h2>
+                <div class="w-24 h-1 bg-cyber-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+                <!-- IT Support -->
+                <div class="cyber-card p-8 rounded-xl reveal hover:scale-105 transition-transform group">
+                    <div
+                        class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyber-primary/20 transition-colors">
+                        <i class="fa-solid fa-server text-3xl text-cyber-primary neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold text-white mb-4">IT Operations</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i>
+                            Hardware Troubleshooting</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i>
+                            Network Administration</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> System
+                            Security & Maintenance</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> Active
+                            Directory / Azure</li>
+                    </ul>
+                </div>
+
+                <!-- Software Dev -->
+                <div class="cyber-card p-8 rounded-xl reveal hover:scale-105 transition-transform group"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyber-primary/20 transition-colors">
+                        <i class="fa-solid fa-code text-3xl text-cyber-primary neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold text-white mb-4">Software Dev</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> Full
+                            Stack Web Apps</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> API
+                            Design & Integration</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i>
+                            Python, JavaScript, SQL</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> DevOps
+                            & Automation</li>
+                    </ul>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="cyber-card p-8 rounded-xl reveal hover:scale-105 transition-transform group"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyber-primary/20 transition-colors">
+                        <i class="fa-solid fa-mobile-screen text-3xl text-cyber-primary neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold text-white mb-4">Mobile Apps</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i>
+                            Cross-Platform (React Native)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> Native
+                            Android (Kotlin)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> UI/UX
+                            Mobile Design</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> App
+                            Store Deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Systems -->
+                <div class="cyber-card p-8 rounded-xl reveal hover:scale-105 transition-transform group"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyber-primary/20 transition-colors">
+                        <i class="fa-solid fa-microchip text-3xl text-cyber-primary neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold text-white mb-4">Embedded Systems</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i>
+                            Cross-Platform (React Native)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> Native
+                            Android (Kotlin)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> UI/UX
+                            Mobile Design</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-cyber-secondary mr-2"></i> App
+                            Store Deployment</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Ticker -->
+    <div class="bg-black py-4 border-y border-white/10 overflow-hidden">
+        <div class="flex space-x-12 whitespace-nowrap animate-[gridMove_20s_linear_infinite_reverse]">
+            <!-- Repeat items for seamless loop effect is implied, here statically rendered -->
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">Python</span>
+            <span class="text-cyber-primary font-orbitron font-bold text-xl uppercase mx-4">JavaScript</span>
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">React Native</span>
+            <span class="text-cyber-secondary font-orbitron font-bold text-xl uppercase mx-4">Docker</span>
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">Linux</span>
+            <span class="text-cyber-primary font-orbitron font-bold text-xl uppercase mx-4">TailwindCSS</span>
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">NodeJS</span>
+            <span class="text-cyber-secondary font-orbitron font-bold text-xl uppercase mx-4">AWS</span>
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">Git</span>
+            <!-- Duplicates for visual fullness -->
+            <span class="text-cyber-primary font-orbitron font-bold text-xl uppercase mx-4">SQL</span>
+            <span class="text-gray-500 font-orbitron font-bold text-xl uppercase mx-4">Flutter</span>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cyber-dark relative">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+                <div>
+                    <h2 class="text-4xl font-orbitron font-bold text-white mb-2">DEPLOYED <span
+                            class="text-cyber-secondary">PROJECTS</span></h2>
+                    <p class="text-gray-400">Selected works demonstrating technical versatility.</p>
+                </div>
+                <a href="#" class="text-cyber-primary hover:text-white transition-colors mt-4 md:mt-0 glitch-hover">View
+                    GitHub -></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Project 1 -->
+                <div class="cyber-card group rounded-lg overflow-hidden reveal">
+                    <div class="h-48 bg-gray-900 relative overflow-hidden">
+                        <!-- Simulated Project Image Area -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="fa-solid fa-network-wired text-6xl text-white/10 group-hover:text-cyber-primary/50 transition-colors"></i>
+                        </div>
+                        <div
+                            class="absolute top-2 right-2 bg-cyber-primary text-black text-xs font-bold px-2 py-1 rounded">
+                            IT TOOL</div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold font-orbitron text-white mb-2 group-hover:text-cyber-primary transition-colors">
+                            NetGuard Monitor</h3>
+                        <p class="text-sm text-gray-400 mb-4">Automated network diagnostic script suite for identifying
+                            latency bottlenecks in corporate infrastructures.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-cyber-secondary">
+                            <span>#Python</span> <span>#Bash</span> <span>#Networking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="cyber-card group rounded-lg overflow-hidden reveal" style="transition-delay: 100ms;">
+                    <div class="h-48 bg-gray-900 relative overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="fa-solid fa-layer-group text-6xl text-white/10 group-hover:text-cyber-secondary/50 transition-colors"></i>
+                        </div>
+                        <div
+                            class="absolute top-2 right-2 bg-cyber-secondary text-white text-xs font-bold px-2 py-1 rounded">
+                            SAAS</div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold font-orbitron text-white mb-2 group-hover:text-cyber-secondary transition-colors">
+                            Inventory Flow</h3>
+                        <p class="text-sm text-gray-400 mb-4">A full-stack warehouse management dashboard with real-time
+                            WebSocket updates.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-cyber-primary">
+                            <span>#React</span> <span>#NodeJS</span> <span>#PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="cyber-card group rounded-lg overflow-hidden reveal" style="transition-delay: 200ms;">
+                    <div class="h-48 bg-gray-900 relative overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i
+                                class="fa-solid fa-mobile-button text-6xl text-white/10 group-hover:text-purple-400/50 transition-colors"></i>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-white text-black text-xs font-bold px-2 py-1 rounded">APP
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold font-orbitron text-white mb-2 group-hover:text-white transition-colors">
+                            FitTrack Pro</h3>
+                        <p class="text-sm text-gray-400 mb-4">Cross-platform fitness tracking application with bluetooth
+                            integration for wearables.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-cyber-secondary">
+                            <span>#ReactNative</span> <span>#Firebase</span> <span>#BluetoothAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black relative border-t border-white/5">
+        <div class="max-w-screen-md mx-auto px-4 text-center reveal">
+            <h2 class="text-4xl font-orbitron font-bold text-white mb-8">ESTABLISH <span
+                    class="text-cyber-primary">CONNECTION</span></h2>
+
+            <form class="space-y-6 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-cyber-primary">IDENTIFIER
+                            (Name)</label>
+                        <input type="text" id="name"
+                            class="bg-white/5 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyber-primary focus:border-cyber-primary block w-full p-3 backdrop-blur-sm"
+                            placeholder="Enter name...">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-cyber-primary">FREQUENCY
+                            (Email)</label>
+                        <input type="email" id="email"
+                            class="bg-white/5 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyber-primary focus:border-cyber-primary block w-full p-3 backdrop-blur-sm"
+                            placeholder="name@domain.com">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-cyber-primary">TRANSMISSION
+                        (Message)</label>
+                    <textarea id="message" rows="4"
+                        class="bg-white/5 border border-gray-600 text-white text-sm rounded-lg focus:ring-cyber-primary focus:border-cyber-primary block w-full p-3 backdrop-blur-sm"
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full text-black bg-cyber-primary hover:bg-cyan-300 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-bold font-orbitron rounded-lg text-sm px-5 py-4 text-center transition-all shadow-[0_0_15px_rgba(0,243,255,0.3)]">SEND
+                    TRANSMISSION</button>
+            </form>
+
+            <div class="mt-12 flex justify-center space-x-8">
+                <a href="#" class="text-gray-400 hover:text-cyber-primary transition-colors text-2xl"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyber-primary transition-colors text-2xl"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyber-primary transition-colors text-2xl"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyber-primary transition-colors text-2xl"><i
+                        class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <p class="mt-8 text-xs text-gray-600 font-mono">
+                © 2026 SimbaSara Systems. All rights reserved.<br>
+                Rendered with TailwindCSS & HTML5.
+            </p>
+        </div>
+    </section>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // 1. Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const navbar = document.getElementById('navbar-default');
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+
+        // 2. Typewriter Effect
+        const textElement = document.getElementById('typewriter');
+        const phrases = ['IT Solutions.', 'Mobile Apps.', 'Robust Software.', 'Cloud Systems.'];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50; // Faster deleting
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 100; // Normal typing
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500; // Pause before new word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+
+        // 3. Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+</body>
+
+</html>
